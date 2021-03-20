@@ -39,8 +39,8 @@ public class Calculator implements ActionListener{
 
 		//style frame
 		f.setSize(600,500);
-        f.setLayout(null);
-        f.setVisible(true);
+        	f.setLayout(null);
+        	f.setVisible(true);
 
 		//add action listeners
 		multiplyButton.addActionListener(this);
@@ -62,7 +62,8 @@ public class Calculator implements ActionListener{
 			resultLabel.setText("Invalid Input");
 		}
 	}
-	 public static void main(String[] args) {
-        new Calculator();
-    }
+	
+	public static void main(String[] args) {
+        	new Calculator();
+    	}
 }
