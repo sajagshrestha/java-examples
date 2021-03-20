@@ -13,6 +13,7 @@ public class Client{
 			String msgFromServer = "";
 			String msgToServer ="";
 
+			//Client must initiate chat
 			while(!msgToServer.equals("stop")){
 				msgToServer = input.readLine();
 				sendData.writeUTF(msgToServer);
