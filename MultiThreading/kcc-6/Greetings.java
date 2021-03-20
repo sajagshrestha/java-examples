@@ -1,5 +1,6 @@
 //thread 1 class
 class Thread1 extends Thread{
+	//override run method
 	public void run(){
 		while(true){
 			try{
@@ -29,8 +30,11 @@ class Thread2 extends Thread{
 //main class
 class Greetings{
 	public static void main(String args[]){
+		//create thread
 		Thread1 t1 = new Thread1();
 		Thread2 t2 = new Thread2();
+
+		//start thread
 		t1.start();
 		t2.start();
 	}
