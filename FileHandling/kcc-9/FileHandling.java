@@ -17,9 +17,9 @@ class FileHandling{
 		//read the same file
 		try{
 			FileReader file2 = new FileReader("./test.txt");
-			int characterCount  = file2.read(); //return -1 at the end of line
+			int characterCount  = file2.read(); //returns -1 at the end of line
 			while(characterCount != -1){
-				System.out.print((char)characterCount);
+				System.out.print((char)characterCount);//typecas to character from ASCII
 				characterCount = file2.read();//read file again to check end of the line
 			}
 			file2.close();
