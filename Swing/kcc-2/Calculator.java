@@ -52,9 +52,11 @@ public class Calculator implements ActionListener{
 			float x = Float.parseFloat(firstNumber.getText());
 			float y = Float.parseFloat(secondNumber.getText());
 			if(e.getSource() == multiplyButton){
+				//if multiply button is clicked
 				resultLabel.setText("The result is: " + (x*y));
 			}
 			else{
+				//if division button is clicked
 				resultLabel.setText("The result is: " + (x/y));
 			}
 		}
