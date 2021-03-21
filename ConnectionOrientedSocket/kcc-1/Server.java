@@ -7,7 +7,7 @@ public class Server{
 			//create server
 			ServerSocket server = new ServerSocket(8000);
 
-			//accept connect from client
+			//accept connection from client
 			Socket socket = server.accept();
 
 			//data stream and input
@@ -15,7 +15,7 @@ public class Server{
 			DataOutputStream sendData = new DataOutputStream(socket.getOutputStream());
 			BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
-			//messges
+			//messages
 			String msgToClient = "";
 			String msgFromClient = "";
 
