@@ -1,0 +1,7 @@
+1. Create interface for remote adder ie IADDER.
+2. Create remote object(stub/skeleton) AdderRemote by implementing IADDER.
+3. Create server.
+4.Create Client.
+5.compile everything.
+6.run registry service using "rmiregistry 5000".
+7.set remote object "rmic AdderRemote"
